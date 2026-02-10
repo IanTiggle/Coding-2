@@ -14,14 +14,16 @@
 # conditional statement if/else
 
 def discount():
-    price = int(input(" how much is the item?"))
-    if price > 50 or price < 75:
+    price = int(input(" how much is the item? "))
+    if price > 50 and price < 75:
         sum = price * .15
         total = price - sum
+        print(sum)
         print("your new total is " + str(total))
     elif price > 75:
         sum = price * .25
         total = price - sum
+        print(sum)
         print("your new total is " + str(total))
     else:
         print("Sorry, no discount")

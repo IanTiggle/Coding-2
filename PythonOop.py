@@ -18,6 +18,24 @@ class Computers:
         self.ram = ram
         self.processor = processor
 
+        def bluetoothConnection(self):
+            print("")
+
+        def internetConnectivity(self):
+            print("")
+        
+        def powerOn(self):
+            print("")
+        
+        def calculator(self):
+            print("")
+
+        def camera(self):
+            print("")
+
+        
+
+
 class Phones:
     def __init__(self, storage, size, carrier, color, camera, name, warranty, price, brand):
         self.storage = storage
@@ -29,6 +47,7 @@ class Phones:
         self.warranty = warranty
         self.price = price
         self.brand = brand
+
 phone1 = Phones(16, "att", 13.00, "yellow", False, "brick Pro", False, 100.00, "brick")
 phone1 = Phones(16, "verizon", 7.00, "blue", False, "brick mini", False, 100.00, "brick")
 

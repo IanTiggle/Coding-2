@@ -49,7 +49,7 @@ class Phones:
         self.brand = brand
 
 phone1 = Phones(16, "att", 13.00, "yellow", False, "brick Pro", False, 100.00, "brick")
-phone1 = Phones(16, "verizon", 7.00, "blue", False, "brick mini", False, 100.00, "brick")
+phone2 = Phones(16, "verizon", 7.00, "blue", False, "brick mini", False, 100.00, "brick")
 
 
 apple_1 = Computers("apple m4", "black", 10.00, 320, True, True, 120, "m4")

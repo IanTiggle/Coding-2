@@ -13,7 +13,7 @@ countryData = requests.get("https://restcountries.com/v3.1/all?fields=name,capit
 # this a object structured for computers and peopleto easily read
 # and sort data
 
-print(countryData.json())
+print(countryData)
 
 southAmericaCountry = requests.get("https://restcountries.com/v3.1/region/south%20america?fields=name,capital").json()
 print(southAmericaCountry)

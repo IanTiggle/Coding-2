@@ -21,8 +21,9 @@ cursor = connect.cursor()
 #                ''')
 # 5. we can now create our first database object.
 cursor.execute('''
-               INSERT INTO gameSales(name, platform, developer, price, genre, totalSales)
-                VALUES('Marvel Rivals', 'PC', 'Marvel', 0, 'Hero Shooter', 1360000)
+               UPDATE gameSales
+                SET platform = 'PC'
+                WHERE id = 1
                 ''')
 
 # 6. once we have a new data object, we need to commit it to the database.

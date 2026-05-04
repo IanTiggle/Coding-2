@@ -35,4 +35,16 @@ def get1data():
     result = cursor.fetchone()
 
     print(result)
-get1data()
+#get1data()
+
+def deleteData():
+    connect = sqlite3.connect('myDb.db')
+    
+    cursor = connect.cursor()
+
+    query = "DELETE FROM gameSales WHERE id = 2"
+
+    cursor.execute(query)
+
+    connect.commit()
+    connect.close()

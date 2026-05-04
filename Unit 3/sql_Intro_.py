@@ -21,8 +21,8 @@ cursor = connect.cursor()
 #                ''')
 # 5. we can now create our first database object.
 cursor.execute('''
-               UPDATE gameSales
-                SET platform = 'PC'
+               DELETE FROM gameSales
+
                 WHERE id = 1
                 ''')
 
